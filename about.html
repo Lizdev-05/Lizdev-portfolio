@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About-Me</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
-</head>
-<style>
-    *{
+    <style>
+        *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -25,12 +25,12 @@ body{
 nav{
     display: flex;
     justify-content: space-between;
-    padding: 20px 200px;
+    padding: 20px 100px;
 }
 
 .logo{
-    font-size: 200;
-    font-weight: 500;
+    font-size: 40px;
+    font-weight: bolder;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-transform: uppercase;
 }
@@ -50,10 +50,109 @@ nav{
     
 }
 
-    .Bottom-container{
+
+/*  MAIN  */
+main{
+    transition: 0.7s ease;
+}
+.capacity{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    transition: 0.5s ease;
+}
+
+.info{
+    width: 60%;
+    margin-top: 300px;
+    padding-left: 100px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition: all .1s;
+}
+.info h1{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+ main .capacity .info h1 .diff{
+    font-weight: bolder;
+    font-size: 30px;
+}
+ .info p{
+    font-size: 20px;
+    margin-top: 16px;
+    line-height: 1.5;
+     color: #fff;
+ }
+
+ main .capacity .info p .name{
+     text-transform: uppercase;
+     font-weight: bold;
+ }
+ button{
+     display: flex;
+     font-size: 16px;
+     font-weight: bold;
+     padding: 10px 30px;
+     margin-top: 20px;
+ }
+  button a{
+      text-decoration: none;
+      color: teal;
+      
+  }
+
+/*--------Social */
+
+.social{
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+  
+   
+   
+}
+
+.social .social-link{
+   text-align: end;
+   margin-bottom: 16px;
+   margin-right: 100px;
+   color: white;
+   font-size: 24px;
+ 
+   
+}
+
+/*   Animation */
+.social-link{
+      animation: Oyinlade 10s infinite;
+      padding: 16px;
+      border-radius: 50%;
+  }
+
+  button{
+    animation: Oyinlade 10s infinite;
+    color: white;
+  }
+
+
+  @keyframes Oyinlade{
+      0%{ background-color: red;}
+      20%{background-color: rgb(0, 255, 34);}
+      50%{background-color: rgb(150, 2, 150);}
+      70%{background-color: rgb(95, 102, 4);}
+      100%{background-color: rgb(0, 255, 106);}
+  }
+
+
+.Bottom-container{
     background-color: rgb(125, 128, 128);
-    padding: 10px 0 10px;
-    margin-top: 40vh;
+    padding: 5px 0 5px;
+    
     text-align: center;
   }
 
@@ -64,11 +163,15 @@ nav{
  
   #footer{
     color: #EAF6F6;
-    font-size: 0.75rem;
+    font-size: 16px;
     padding: 20px 0;
   }
- 
-</style>
+
+
+    </style>
+
+</head>
+
 <body>
     <nav>
         <div class="logo">
@@ -76,17 +179,46 @@ nav{
         </div>
         <div class="nav-items">
             <a href="index.html" class="navbar">Index</a>
-            <a href="#" class="navbar">About</a>
+            <a href="about.html" class="navbar">About</a>
             <a href="work.html" class="navbar">Work</a>
-            <a href="contact.html" class="navbar">Contact</a>
+            <a href="#" class="navbar">Contact</a>
            
         </div>
+        </nav>
+              <!---------Main------------>
+         
+              <main>
+                    
+                    <section class="capacity">
+                        
+                          <div class="info">
+                          
+                            <h1> <span class="diff"> I design things with</span> <br> love and passion</h1>
+                             <p> <span class="name">Oyinlade </span>  Ojesanmi is a web developer  based in Lagos, Nigeria. she is dedicated to developing and optimizing interactive,
+                                user-friendly, and feature-rich websites, her goal is to implement visual elements that users see and interact with 
+                                in a web application while focusing on typography, content and conveying the message that you want to send.</p>
 
+                                <button><a href="./read.html">Read More</a></button>
+                       </div>
+                      
+                       
+                       <div class="social">
+                        <a class="social-link" href="linkedin.com/in/elizabeth-oyinlade-ojesanmi-0702aa16a/"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-link" href="https://twitter.com/ojesanmioyin/"><i class="fab fa-twitter"></i></a>
+                        <a class="social-link" href="http://www.facebook.com/ojesanmioyinlade"><i class="fab fa-facebook"></i></a>
+                        <a class="social-link" href="https://github.com/Lizdev-05"><i class="fab fa-github"></i></a>
+                    </div>
+                    </section>
+                  
+                </div>
+               </main>
+            
+         
+       
+        <!----------------Footer-------------------->
         
         <div class="Bottom-container">
-            <a class="footer-link" href="linkedin.com/in/elizabeth-oyinlade-ojesanmi-0702aa16a/">LinkedIn</a>
-            <a class="footer-link" href="https://twitter.com/ojesanmioyin/">Twitter</a>
-            <a class="footer-link" href="http://www.facebook.com/ojesanmioyinlade">Facebook</a>
+           
             <p id="footer">© 2021 Oyinlade Ojesanmi.</p>
           </div>
 </body>
