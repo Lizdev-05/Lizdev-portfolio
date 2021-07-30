@@ -5,12 +5,14 @@
     
 }
 
-body{
+
+
+
+.container{
     background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url("lizzy.jpg") ;
     background-repeat: no-repeat;
     background-position: top-center;
     background-size: cover;
-    height: 100vh;
 }
 
 nav{
@@ -40,6 +42,13 @@ nav{
    color: white;
     
 }
+
+
+/* Hide hamburger by default on big screen*/
+.hamburger-wrapper{
+    display: none;
+}
+
 
 
 
@@ -146,15 +155,14 @@ color: teal;
 
 
 .Bottom-container{
-    background-color: rgb(125, 128, 128);
+    
     padding: 10px 0 10px;
-    margin-top: 12vh;
     text-align: center;
   }
 
- .Bottom-container  a{
+ .Bottom-container  p{
       color: #EAF6F6;
-      text-decoration: none;
+      
   }
 
    a, .nav-items a:hover{
@@ -186,3 +194,38 @@ color: teal;
       70%{background-color: rgb(95, 102, 4);}
       100%{background-color: rgb(0, 255, 106);}
   }
+
+
+
+
+  /* Media Query */ 
+
+@media only screen and (max-width: 800px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px;
+    }
+    .hamburger-wrapper{
+        display: block;
+        color: #fff;
+        cursor: pointer;
+        font-size: 25px;
+    }
+
+    .nav-items{
+        display: none;
+    }
+
+    .open-nav-items{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        width: 100%;
+    
+    }
+    .nav-links{
+        text-align: right;
+    }
+    
+}

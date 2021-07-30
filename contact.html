@@ -6,108 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact-Me</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-   
-
-    <style>
-        *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url("lizzy.jpg") ;
-    background-repeat: no-repeat;
-    background-position: top-center;
-    background-size: cover;
-    height: 100vh;
-}
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 200px;
-}
-
-.logo{
-    font-size: 40px;
-    font-weight: bolder;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-transform: uppercase;
-}
-
-.logo a{
-    text-decoration: none;
-    color: white;
-    
-}
-.nav-items .navbar{
-    font-size: 20px;
-    font-weight: 500;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-decoration: none;
-    padding: 20px;
-   color: white;
-    
-}
-
-/*--------Social 
-
-.social{
-    display: flex;
-    flex-direction: column;
-    margin-top: 200px;
-  
-   
-   
-}
-
-.social .social-link{
-   text-align: end;
-   margin-bottom: 16px;
-   margin-right: 250px;
-   color: white;
-   font-size: 24px;
- 
-   
-}
-/*   Animation 
-.social-link{
-      animation: Oyinlade 10s infinite;
-      padding: 16px;
-      border-radius: 50%;
-  }
-
-  @keyframes Oyinlade{
-      0%{ background-color: red;}
-      20%{background-color: rgb(0, 255, 34);}
-      50%{background-color: rgb(150, 2, 150);}
-      70%{background-color: rgb(95, 102, 4);}
-      100%{background-color: rgb(0, 255, 106);}
-  }
-
-*/
-.Bottom-container{
-    background-color: rgb(125, 128, 128);
-    padding: 10px 0 10px;
-    margin-top: 80vh;
-    text-align: center;
-  }
-
- .Bottom-container  a{
-      color: #EAF6F6;
-      text-decoration: none;
-  }
- 
-  #footer{
-    color: #EAF6F6;
-    font-size: 16px;
-    padding: 20px 0;
-  }
- 
-
-
-    </style>
+   <link rel="stylesheet" href="contact.css">
 </head>
 <body>
     <nav>
@@ -118,26 +17,56 @@ nav{
             <a href="index.html" class="navbar">Index</a>
             <a href="about.html" class="navbar">About</a>
             <a href="work.html" class="navbar">Work</a>
-            <a href="#" class="navbar">Contact</a>
+             <a href="#" class="navbar">Contact</a>
+
            
         </div>
-        </nav>
-             <!---------Main-----------
 
+        <div class="hamburger-wrapper" id="menu-toggler"  onclick="toggleNavbar()"> 
+            <i class=" hamburger fas fa-bars"></i>
+        </div>
+        </nav>
+             <!---------Main----------->
+ 
+             <div class="container">
+               <div class="intro">
+                   <h1>hire me</h1>
+                   <div class="form">
+                      <form action="">
+                        <p>Email</p>
+                        <input type="email"  placeholder="Enter your email address" class="input email" required>
+                        <p>message</p>
+                       <textarea name="text"  class="text input" cols="10" rows="3" >message</textarea>
+                       <br>
+                        <button type="button" name="button">Submit</button>
+                    </form>
+                   </div>
+               </div>
          
         <div class="social">
             <a class="social-link" href="linkedin.com/in/elizabeth-oyinlade-ojesanmi-0702aa16a/"><i class="fab fa-linkedin-in"></i></a>
             <a class="social-link" href="https://twitter.com/ojesanmioyin/"><i class="fab fa-twitter"></i></a>
             <a class="social-link" href="http://www.facebook.com/ojesanmioyinlade"><i class="fab fa-facebook"></i></a>
             <a class="social-link" href="https://github.com/Lizdev-05"><i class="fab fa-github"></i></a>
-        </div>  --->
-        <!----------------Footer-------------------->
-        
+        </div> 
+    </div>
         <div class="Bottom-container">
-            <a class="footer-link" href="linkedin.com/in/elizabeth-oyinlade-ojesanmi-0702aa16a/">LinkedIn</a>
-            <a class="footer-link" href="https://twitter.com/ojesanmioyin/">Twitter</a>
-            <a class="footer-link" href="http://www.facebook.com/ojesanmioyinlade">Facebook</a>
             <p id="footer">© 2021 Oyinlade Ojesanmi.</p>
           </div>
+
+          <script>
+
+            // J.s //
+            
+            const navItemContainer =  document.getElementById("nav-item-wrapper");
+
+
+
+function toggleNavbar(){
+    navItemContainer.classList.toggle("open-nav-items")
+}
+
+            
+                </script>
 </body>
 </html>

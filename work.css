@@ -1,0 +1,504 @@
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+/* body{
+background: linear-gradient(rgba(0, 0, 0, 0.5) 100%, rgba(0, 0, 0, 0.5)100%), url("lizzy.jpg") ;
+background-repeat: no-repeat;
+background-position: top-center;
+background-size: cover;
+height: 100vh;
+
+} */
+
+nav{
+display: flex;
+justify-content: space-between;
+padding: 20px 200px;
+}
+
+.logo{
+    
+        font-size: 40px;
+        font-weight: bolder;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-transform: uppercase;
+    }
+    
+
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+.nav-items .navbar{
+font-size: 20px;
+font-weight: 500;
+font-family: Georgia, 'Times New Roman', Times, serif;
+text-decoration: none;
+padding: 20px;
+color: white;
+
+}
+
+
+
+/* Hide hamburger by default on big screen*/
+.hamburger-wrapper{
+    display: none;
+}
+
+
+/*mansory */
+
+.layout{
+    background-color: grey;
+
+}
+
+
+.layout h1{
+    padding: 24px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-align: center;
+  color: white;
+
+}
+ /*works*/
+
+ .work{
+    display: grid;
+    max-width: 800px;
+    padding: 0.5rem;
+    margin: 0 auto;
+    border-radius: 5px;
+    grid-gap: 0.5rem;
+    background-color: lightskyblue;
+   grid-auto-rows: minmax(200px, auto);
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 20px;
+}
+
+ .web img:hover{
+     cursor: pointer;
+     transform: translateX(-50px) scale(1);
+ }
+
+.web  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    transition: all 2sc ease-in-out;
+}
+
+.tweenty{
+    grid-column: span 3;
+}
+
+
+
+.sixteen{
+  grid-column: span 2;
+      
+}
+.seventeen{
+    grid-column: span 4;;
+}
+
+.nineteen{
+    grid-column: span 2;
+}
+
+/*Memories*/
+.box {
+   
+    background-color: rgb(125, 128, 128);
+    overflow: hidden;
+  }
+  
+  .container{
+      display: grid;
+      max-width: 800px;
+      padding: 0.5rem;
+      margin: 0 auto;
+      border-radius: 5px;
+      grid-gap: 0.5rem;
+      background-color: lightskyblue;
+     grid-auto-rows: minmax(200px, auto);
+      grid-template-columns: repeat(4, 1fr);
+  }
+    .container  h1{
+        grid: none;
+    }
+   .box img:hover{
+       cursor: pointer;
+       transform: translateX(-50px) scale(1);
+   }
+  
+  .box  img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px;
+      transition: all 2sc ease-in-out;
+  }
+
+  .one{
+      grid-column: span 3;
+  }
+
+  .three{
+    grid-column: span 2;
+    grid-row: span 2; 
+  }
+
+  .six{
+    grid-column: span 2;
+        grid-row: span 2;
+  
+   
+  
+}
+
+
+  .seven{
+      grid-column: span 2;
+  }
+ 
+  .nine{
+    grid-column: span 2;
+     grid-row: span 1;
+ 
+   
+  
+}
+.four{
+    grid-column: span 2;
+   
+}
+
+.five{
+    grid-column: span 2;
+    
+}
+
+  .eight{
+    grid-column: span 2;
+    grid-row: span 2; 
+}
+
+.eleven, .ten{
+    grid-column: span 2;
+    
+}
+
+.twelve{
+    grid-column: span 4;
+}
+
+
+/* Footer */
+.Bottom-container{
+display: inline-bloc;
+padding: 10px 0 10px;
+text-align: center;
+margin-top: 0;
+}
+
+.Bottom-container  p{
+ color: red;
+ padding: 20px;
+ text-decoration: none;
+}
+
+#footer{
+color: #EAF6F6;
+font-size: 16px;
+padding: 20px 0;
+}
+.layout p{
+    text-align: center;
+}
+
+
+ /* Media Query */ 
+ @media only screen and (max-width: 500px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px;
+    }
+    .hamburger-wrapper{
+        display: block;
+        color: #fff;
+        cursor: pointer;
+        font-size: 25px;
+    }
+
+    .nav-items{
+        display: none;
+    }
+
+    .open-nav-items{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        width: 100%;
+    
+    }
+    .nav-links{
+        text-align: right;
+    }
+
+    .work{
+        display: grid;
+        grid-auto-rows: minmax(100px, auto);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+        .tweenty{
+            grid-column: span 2;
+            grid-row: 1;
+            
+        }
+        
+    .tweenty-one{
+        grid-column: span 2;
+    }
+        
+        .sixteen{
+          grid-column: span 2;
+              
+        }
+        .seventeen{
+            grid-column: span 2;
+        }
+        
+        .nineteen{
+            grid-column: span 2;
+        }
+        
+        /*Memories*/
+        .box {
+           
+            background-color: rgb(125, 128, 128);
+            overflow: hidden;
+          }
+          
+          .container{
+              display: grid;
+            
+             grid-auto-rows: minmax(100px, auto);
+              grid-template-columns: repeat(2, 1fr);
+          }
+            .container  h1{
+                grid: none;
+            }
+         
+    
+          .one{
+              grid-column: span 2;
+          }
+        
+          .three{
+            grid-column: span 1;
+            grid-row: span 2; 
+          }
+        
+          .six{
+            grid-column: span 1;
+                grid-row: span 2;
+          
+           
+          
+        }
+        
+        
+          .seven{
+              grid-column: span 2;
+          }
+         
+          .nine{
+            grid-column: span 2;
+             grid-row: span 1;
+         
+           
+          
+        }
+        .four{
+            grid-column: span 1;
+           
+        }
+        
+        .five{
+            grid-column: span 1;
+            
+        }
+        
+          .eight{
+            grid-column: span 1;
+            grid-row: span 2; 
+        }
+
+        .nine{
+            grid-column: span 1;
+        }
+        .ten{
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+        .eleven{
+            grid-column: span 1;
+            
+        }
+        
+        .twelve{
+            grid-column: span 2;
+        }
+    
+    
+}
+
+
+ @media only screen and (max-width: 800px){
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px;
+    }
+    .hamburger-wrapper{
+        display: block;
+        color: #fff;
+        cursor: pointer;
+        font-size: 25px;
+    }
+
+    .nav-items{
+        display: none;
+    }
+
+    .open-nav-items{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        width: 100%;
+    
+    }
+    .nav-links{
+        text-align: right;
+    }
+
+    .layout{
+        grid-auto-rows: minmax(100px, auto);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+        .tweenty{
+            grid-column: span 2;
+        }
+        
+        
+        
+        .sixteen{
+          grid-column: span 1;
+              
+        }
+        .seventeen{
+            grid-column: span 2;
+        }
+        
+        .nineteen{
+            grid-column: span 1;
+        }
+        
+        /*Memories*/
+        .box {
+           
+            background-color: rgb(125, 128, 128);
+            overflow: hidden;
+          }
+          
+          .container{
+              display: grid;
+            
+             grid-auto-rows: minmax(100px, auto);
+              grid-template-columns: repeat(2, 1fr);
+          }
+            .container  h1{
+                grid: none;
+            }
+           .box img:hover{
+               cursor: pointer;
+               transform: translateX(-50px) scale(1);
+           }
+    
+          .one{
+              grid-column: span 2;
+          }
+        
+          .three{
+            grid-column: span 1;
+            grid-row: span 2; 
+          }
+        
+          .six{
+            grid-column: span 1;
+                grid-row: span 2;
+          
+           
+          
+        }
+        
+        
+          .seven{
+              grid-column: span 2;
+          }
+         
+          .nine{
+            grid-column: span 2;
+             grid-row: span 1;
+         
+           
+          
+        }
+        .four{
+            grid-column: span 1;
+           
+        }
+        
+        .five{
+            grid-column: span 1;
+            
+        }
+        
+          .eight{
+            grid-column: span 1;
+            grid-row: span 2; 
+        }
+
+        .nine{
+            grid-column: span 1;
+        }
+        .ten{
+            grid-column: span 1;
+            grid-row: span 2;
+        }
+        .eleven{
+            grid-column: span 1;
+            
+        }
+        
+        .twelve{
+            grid-column: span 2;
+        }
+    
+    
+}

@@ -10,18 +10,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="container">
     <nav>
         <div class="logo">
             <a href="#" class="logo-wrapper">Lizdev</a>
         </div>
-        <div class="nav-items">
+        <div class="nav-items"  id="nav-item-wrapper">
             <a href="#" class="navbar">Index</a>
             <a href="about.html" class="navbar">About</a>
             <a href="work.html" class="navbar">Work</a>
             <a href="contact.html" class="navbar">Contact</a>
            
         </div>
-
+        <div class="hamburger-wrapper" id="menu-toggler"  onclick="toggleNavbar()"> 
+            <i class=" hamburger fas fa-bars"></i>
+        </div>
     </nav>
       <!------------Main Section-------------->
     <main>
@@ -55,6 +58,23 @@
             
             <p id="footer">© 2021 Oyinlade Ojesanmi.</p>
           </div>
+               
+      
+    
         </div>
+    </div>
+       
+        <script>
+
+            // J.s //
+            
+            const navItemContainer =  document.getElementById("nav-item-wrapper");
+
+    function toggleNavbar(){
+    navItemContainer.classList.toggle("open-nav-items")
+}
+
+            
+                </script>
 </body>
 </html>
