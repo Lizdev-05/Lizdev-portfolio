@@ -1,72 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact-Me</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-   <link rel="stylesheet" href="contact.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
     <nav>
+      <div class="navigation">
         <div class="logo">
-            <a href="#" class="logo-wrapper">Lizdev</a>
-        </div>
-        <div class="nav-items">
-            <a href="index.html" class="navbar">Index</a>
-            <a href="about.html" class="navbar">About</a>
-            <a href="work.html" class="navbar">Work</a>
-             <a href="#" class="navbar">Contact</a>
-
-           
-        </div>
-
-        <div class="hamburger-wrapper" id="menu-toggler"  onclick="toggleNavbar()"> 
-            <i class=" hamburger fas fa-bars"></i>
-        </div>
-        </nav>
-             <!---------Main----------->
- 
-             <div class="container">
-               <div class="intro">
-                   <h1>hire me</h1>
-                   <div class="form">
-                      <form action="">
-                        <p>Email</p>
-                        <input type="email"  placeholder="Enter your email address" class="input email" required>
-                        <p>message</p>
-                       <textarea name="text"  class="text input" cols="10" rows="3" >message</textarea>
-                       <br>
-                        <button type="button" name="button">Submit</button>
-                    </form>
-                   </div>
-               </div>
-         
-        <div class="social">
-            <a class="social-link" href="linkedin.com/in/elizabeth-oyinlade-ojesanmi-0702aa16a/"><i class="fab fa-linkedin-in"></i></a>
-            <a class="social-link" href="https://twitter.com/ojesanmioyin/"><i class="fab fa-twitter"></i></a>
-            <a class="social-link" href="http://www.facebook.com/ojesanmioyinlade"><i class="fab fa-facebook"></i></a>
-            <a class="social-link" href="https://github.com/Lizdev-05"><i class="fab fa-github"></i></a>
-        </div> 
-    </div>
-        <div class="Bottom-container">
-            <p id="footer">© 2021 Oyinlade Ojesanmi.</p>
+          <a href="#" class="logo-wrapper">Lizdev</a>
+          <div class="hamburger-wrapper" id="menu-toggler">
+            <i id="navigation-icon" class="hamburger fas fa-bars"></i>
           </div>
+        </div>
+        <div class="nav-items" id="nav-item-wrapper">
+          <ul class="nav-links" id="dropdown">
+            <li class="nav-links-item">
+              <a href="index.html" class="navbar">Index</a>
+            </li>
+            <li class="nav-links-item">
+              <a href="about.html" class="navbar">About</a>
+            </li>
+            <li class="nav-links-item">
+              <a href="work.html" class="navbar">Work</a>
+            </li>
+            <li class="nav-links-item">
+              <a href="contact.html" class="navbar">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!---------Main----------->
 
-          <script>
+    <div class="container">
+      <div class="mini-container">
+        <div class="intro">
+          <h1>hire me</h1>
+          <div class="form">
+            <form action="">
+              <p>Email</p>
+              <input
+                type="email"
+                placeholder="Enter your email address"
+                class="input email"
+                required
+              />
+              <p>message</p>
+              <textarea name="text" class="text input" cols="10" rows="3">
+message</textarea
+              >
+              <br />
+              <button type="button" name="button">Submit</button>
+            </form>
+          </div>
+        </div>
 
-            // J.s //
-            
-            const navItemContainer =  document.getElementById("nav-item-wrapper");
+        <div class="social-containers">
+          <div class="social">
+            <a
+              class="social-link"
+              href="linkedin.com/in/elizabeth-oyinlade-ojesanmi-0702aa16a/"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a class="social-link" href="https://twitter.com/ojesanmioyin/"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              class="social-link"
+              href="http://www.facebook.com/ojesanmioyinlade"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a class="social-link" href="https://github.com/Lizdev-05"
+              ><i class="fab fa-github"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="Bottom-container">
+      <p id="footer">© 2021 Oyinlade Ojesanmi.</p>
+    </div>
 
-
-function toggleNavbar(){
-    navItemContainer.classList.toggle("open-nav-items")
-}
-
-            
-                </script>
-</body>
+    <script src="./main.js"></script>
+  </body>
 </html>
