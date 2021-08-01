@@ -128,7 +128,7 @@ main .info p .dev {
 
 button {
   padding: 8px 20px;
-  margin-left: 200px;
+  margin-left: 80px;
   background-color: white;
   border-color: lightgrey;
   font-weight: 500;
@@ -273,4 +273,9 @@ button {
   .info {
     flex-direction: column;
   }
+
+  button {
+   display: none;
+}
+
 }
